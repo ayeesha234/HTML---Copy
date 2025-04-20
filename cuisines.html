@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>World of Cuisines</title>
+    <link rel='stylesheet' href='style.css' type="text/css">
+    <style>
+        body {
+            background-color: #f8f8f8;
+        }
+
+        header {
+            background-color: tomato;
+        }
+
+        nav {
+            background-color: lightgoldenrodyellow;
+        }
+
+        #intro {
+            background-color: lightcoral;
+        }
+
+        .main-section-content h2 {
+            background-color: darksalmon;
+        }
+
+        #popular-dishes,
+        footer {
+            background-color: lightyellow;
+        }
+
+        header,
+        nav,
+        #intro,
+        #main-section,
+        #popular-dishes,
+        footer {
+            border: 1px solid black;
+        }
+
+        header,
+        nav,
+        #main-section {
+            border-radius: 10px;
+        }
+
+        header h1 {
+            color: white;
+        }
+
+        h2,
+        p {
+            color: #333333;
+        }
+
+        table,
+        th,
+        td {
+            border: 1px solid black;
+        }
+
+        tr:last-child {
+            color: red;
+        }
+
+        span {
+            color: blue;
+        }
+
+        footer p:first-child span {
+            color: red;
+        }
+
+        .chef-info {
+            border: 1px solid;
+            border-radius: 5px;
+        }
+
+        button {
+            background-color: red;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="grid-container">
+        <header>
+            <h1>World of Cuisines</h1>
+            <img src="./public/food.jpg" alt="Delicious food" width="300">
+        </header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">Recipes</a></li>
+                <li><a href="#">Famous Chefs</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+        <div id="intro">
+            <h2>Welcome to World of Cuisines</h2>
+            <p>Explore a variety of dishes from different cultures and learn how to cook them.</p>
+        </div>
+        <div id="main-section">
+            <div class="main-section-content">
+                <h2>Meet Our Chefs</h2>
+                <div id="chefs">
+                    <div class="chef-info">
+                        <div>
+                            <img src="./public/chef1.jpg" alt="chef image" width="100">
+                        </div>
+                        <div>
+                            <h3>Chef Gordon</h3>
+                            <p>A world-renowned chef specializing in Italian cuisine.</p>
+                        </div>
+                    </div>
+                    <div class="chef-info">
+                        <div>
+                            <img src="./public/chef2.jpg" alt="chef image" width="100">
+                        </div>
+                        <div>
+                            <h3>Chef Lisa</h3>
+                            <p>Expert in French desserts and pastries.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="recipes" class="main-section-content">
+                <h2>Popular Recipes</h2>
+                <h3>Spaghetti Carbonara</h3>
+                <p><strong>John: </strong> <q>One of the best pasta dishes I've ever tried!</q></p>
+                <p><strong>Emma: </strong><q>Rich and creamy, highly recommend.</q></p>
+            </div>
+            <div id="videos" class="main-section-content">
+                <h2>Cooking Tutorials</h2>
+                <div>
+                    <video width="560" height="315" controls autoplay>
+                        <source src="./public/food-video.mp4" type="video/mp4">
+                    </video>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/d6wc5nVKCX0"
+                        title="YouTube video player"></iframe>
+                </div>
+            </div>
+            <div class="main-section-content">
+                <h2>Restaurant Timings</h2>
+                <table>
+                    <tr>
+                        <th>Monday</th>
+                        <td>12pm - 10pm</td>
+                    </tr>
+                    <tr>
+                        <th>Tuesday</th>
+                        <td>12pm - 10pm</td>
+                    </tr>
+                    <tr>
+                        <th>Wednesday</th>
+                        <td>12pm - 10pm</td>
+                    </tr>
+                    <tr>
+                        <th>Thursday</th>
+                        <td>12pm - 10pm</td>
+                    </tr>
+                    <tr>
+                        <th>Friday</th>
+                        <td>12pm - 11pm</td>
+                    </tr>
+                    <tr>
+                        <th>Saturday</th>
+                        <td>12pm - 11pm</td>
+                    </tr>
+                    <tr>
+                        <th>Sunday</th>
+                        <td>Closed</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <div id="popular-dishes">
+            <h2>Popular Dishes</h2>
+            <ol>
+                <li><b>Sushi</b> - Japan</li>
+                <li><b>Paella</b> - Spain</li>
+                <li><b>Tacos</b> - Mexico</li>
+                <li><b>Butter Chicken</b> - India</li>
+            </ol>
+        </div>
+        <footer>
+            <p><span>Contact Us:</span> Chef Gordon</p>
+            <p><span>Phone No:</span> +123456789</p>
+            <address>123 Culinary Street, Food City</address>
+        </footer>
+        <button>Make a Reservation</button>
+    </div>
+</body>
+
+</html>

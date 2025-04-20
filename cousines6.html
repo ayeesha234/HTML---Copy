@@ -1,0 +1,179 @@
+body {
+background-color: #f8f8f8;
+}
+header {
+background-color: tomato;
+display: flex;
+justify-content: space-between;
+align-items: center;
+grid-area: header;
+}
+nav {
+background-color: lightgoldenrodyellow;
+position: sticky;
+top: 0;
+z-index: 2;
+display: flex;
+justify-content: center;
+grid-area: nav;
+}
+#intro {
+background-color: lightcoral;
+font-family: Arial, Helvetica, sans-serif;
+text-align: center;
+grid-area: intro;
+}
+
+.main-section-content h2 {
+background-color: darksalmon;
+font-family: Arial, Helvetica, sans-serif;
+padding: 5px;
+font-size: 24px;
+text-align: center;
+margin-bottom: 50px;
+}
+
+#popular-dishes,
+footer {
+background-color: lightyellow;
+grid-area: bestsellers;
+}
+
+header,
+nav,
+#intro,
+#main-section,
+#popular-dishes,
+footer {
+border: 1px solid black;
+}
+header,
+nav,
+#main-section {
+border-radius: 10px;
+}
+h1 {
+color: white;
+font-size: 50px;
+font-family: Arial, Helvetica, sans-serif;
+margin: 30px;
+}
+h2,
+p {
+color: #333333;
+}
+table,
+th,
+td {
+border: 1px solid black;
+}
+tr:last-child {
+color: red;
+}
+span {
+color: blue;
+}
+footer p:first-child span {
+color: red;
+}
+.chef-info {
+border-radius: 5px;
+margin: 10px;
+width: 400px;
+box-shadow: 6px 0px 21px -3px #333333;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+button {
+background-color: red;
+color: white;
+font-size: 20px;
+font-weight: bold;
+padding: 5px;
+border-radius: 5px;
+border: none;
+position: fixed;
+right: 50px;
+bottom: 40px;
+}
+ul {
+list-style-type: none;
+}
+li a {
+text-decoration: none;
+color: #333333;
+font-size: 20px;
+font-weight: 600;
+}
+li a:hover {
+color: red;
+}
+p {
+font-size: 18px;
+}
+h3 {
+font-size: 20px;
+font-family: Arial, Helvetica, sans-serif;
+text-decoration: underline;
+}
+nav li {
+margin: 10px;
+padding: 5px;
+border: 1px solid;
+border-radius: 5px;
+}
+.chef-info div:last-child {
+margin-left: 50px;
+}
+.main-section-content {
+padding: 20px;
+}
+table {
+margin: auto;
+}
+th,
+td {
+padding: 10px;
+}
+footer {
+padding: 20px;
+display: flex;
+justify-content: space-around;
+align-items: center;
+grid-area: footer;
+}
+#popular-dishes h2 {
+padding: 20px;
+}
+ol li {
+margin-bottom: 20px;
+}
+#book-reviews p,
+#book-reviews h3 {
+position: relative;
+left: 40%;
+width: 400px;
+}
+#videos div {
+display: flex;
+justify-content: space-around;
+}
+#teachers {
+display: flex;
+justify-content: center;
+align-items: center;
+}
+nav ul {
+display: flex;
+justify-content: space-between;
+}
+.grid-container {
+display: grid;
+grid-template-columns: auto auto auto auto auto;
+grid-template-areas:
+"header header header header intro"
+"nav nav nav nav intro"
+"main-section main-section main-section main-section bestsellers"
+"footer footer footer footer footer";
+}
